@@ -1,0 +1,42 @@
+#mainBox{
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+#mainPane{
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+#turn{
+        -fx-font: 25px Tahoma;
+        -fx-text-fill: white;
+        -fx-stroke-width: 1;
+        -fx-font-weight: bold;
+}
+#fighter1hp{
+        -fx-font: 20px Tahoma;
+        -fx-text-fill: white;
+        -fx-stroke-width: 1;
+        -fx-font-weight: bold;
+}
+#fighter2hp{
+        -fx-font: 20px Tahoma;
+        -fx-text-fill: white;
+        -fx-stroke-width: 1;
+        -fx-font-weight: bold;
+}
+#characterInfo1{
+        -fx-font: 25px Tahoma;
+        -fx-text-fill: white;
+        -fx-stroke-width: 1;
+        -fx-font-weight: bold;
+}
+#characterInfo2{
+        -fx-font: 25px Tahoma;
+        -fx-text-fill: white;
+        -fx-stroke-width: 1;
+        -fx-font-weight: bold;
+}

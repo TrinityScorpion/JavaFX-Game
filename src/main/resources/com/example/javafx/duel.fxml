@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainBox" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('batle.jpg')" stylesheets="@../../../css/battleStyle.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.DuelController">
+
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Pane fx:id="mainPane" prefHeight="50" prefWidth="50">
+        <Label fx:id="turn" alignment="BOTTOM_CENTER" layoutX="15.0" layoutY="10.0" text="Battle Begin" textAlignment="CENTER" />
+        <Button fx:id="closeButton" cancelButton="true" layoutX="500" layoutY="330" mnemonicParsing="false" onAction="#closeButton" text="Close" />
+        <ProgressBar fx:id="hpProgress1" layoutX="58.0" layoutY="85.0" progress="1.0" style="-fx-box-border: black; -fx-accent: red;" />
+        <ProgressBar fx:id="hpProgress2" layoutX="375.0" layoutY="85.0" progress="1.0" style="-fx-box-border: black; -fx-accent: red;" />
+        <Label fx:id="fighter1hp" alignment="BOTTOM_CENTER" layoutX="53.0" layoutY="107.0" text="x/HP" />
+        <Label fx:id="characterInfo1" alignment="BOTTOM_CENTER" layoutX="378.0" layoutY="50.0" text="..." />
+        <Label fx:id="characterInfo2" alignment="BOTTOM_CENTER" layoutX="59.0" layoutY="50.0" text="..." />
+        <Button fx:id="attackButton1" layoutX="80.0" layoutY="139.0" onAction="#attackButton1" text="Attack" />
+        <Button fx:id="spellBookButton1" layoutX="70.0" layoutY="172.0" onAction="#spellBookButton1" text="Spell Book" />
+        <Button fx:id="cureButton1" layoutX="85.0" layoutY="204.0" onAction="#cureButton1" text="Cure" />
+
+        <Label fx:id="fighter2hp" alignment="BOTTOM_CENTER" layoutX="371.0" layoutY="107.0" text="x/HP" />
+        <Button fx:id="attackButton2" layoutX="400" layoutY="139" onAction="#attackButton2" text="Attack" />
+        <Button fx:id="spellBookButton2" layoutX="390" layoutY="172" onAction="#spellBookButton2" text="Spell Book" />
+        <Button fx:id="cureButton2" layoutX="405" layoutY="204" onAction="#cureButton2" text="Cure" />
+        <ImageView fx:id="firstPhoto" fitHeight="115.0" fitWidth="122.0" layoutX="43.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="secondPhoto" fitHeight="115.0" fitWidth="122.0" layoutX="372.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+    </Pane>
+</VBox>
